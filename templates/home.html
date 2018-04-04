@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <!--<link rel="stylesheet" href="static/css/home.css">-->
+    <link rel="stylesheet" href="{{static_url('css/home.css')}}">
+</head>
+<body>
+    <h1>这是home页面</h1>
+    <h1>num:{{num}}</h1>
+    <h1>num + 10 :{{num + 10}}</h1>
+
+    <h1>{{per["name"]}}</h1>
+
+    {% if flag == 0%}
+        <h1>hi good man</h1>
+    {% end %}
+
+    <ul>
+        {% for stu in stus %}
+            <li>{{stu["name"]}}</li>
+        {%end%}
+    </ul>
+
+</body>
+</html>

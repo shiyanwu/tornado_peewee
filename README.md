@@ -1,2 +1,2 @@
 # tornado_peewee
-a project with tornado and peewee
+a tornado project and orm choose peewee
