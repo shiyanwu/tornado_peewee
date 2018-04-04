@@ -9,7 +9,7 @@ class MainHandler(RequestHandler):
 
     def get(self):
         user = User.create(
-            username="s5",
+            username="s7",
             password="12345678",
             email="shiyanwushuai@163.com",
             join_date=datetime.datetime.now())
