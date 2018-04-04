@@ -14,7 +14,7 @@ def create_tables():
 
 
 class User(BaseModel):
-    username = CharField(unique=True)
+    username = CharField()
     password = CharField()
     email = CharField()
     join_date = DateTimeField()

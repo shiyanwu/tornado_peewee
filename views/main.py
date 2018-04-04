@@ -9,8 +9,8 @@ class MainHandler(RequestHandler):
 
     def get(self):
         user = User.create(
-            username="s7",
+            username="s13",
             password="12345678",
             email="shiyanwushuai@163.com",
             join_date=datetime.datetime.now())
-        print(user)
+        app_log.error(user)
