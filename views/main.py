@@ -13,4 +13,4 @@ class MainHandler(RequestHandler):
             password="12345678",
             email="shiyanwushuai@163.com",
             join_date=datetime.datetime.now())
-        app_log.error(user)
+        gen_log.info(user)
